@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* ================= English ================= */
+
+/* Gƒiƒr */
+#gnavi a{
+	padding:7px 21px 7px 21px !important;
+}
+.subMenu div{
+	line-height:150%;
+}

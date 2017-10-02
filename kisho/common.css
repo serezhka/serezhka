@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/* ================= browser ================= */
+
+/* スクロールバーの有無によるズレ対策 */
+html{	overflow-y: scroll;}
+
+/* bodyの設定 */
+body{
+	color: #333;
+	background: #fff;
+	font-size: 0.813em;/* 13px */
+	font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',sans-serif;
+	line-height: 1.7;
+	-webkit-text-size-adjust: 100%;
+}
+*{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+img{	vertical-align: bottom;}
+
+/* hタグ */
+h1,h2,h3,h4,h5,h6{
+	font-size: 0.813em;/* 13px */
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+h2.ttl{
+	font-size: 1.077em;/* 14px */
+	font-weight: bold;
+	
+}
+/* リンク */
+a{
+	outline: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration: none;
+	color: #333;
+}
+a:hover{text-decoration: underline;}
+a:hover img {
+	filter: alpha(opacity=75);
+	-moz-opacity:0.75;
+	opacity:0.75;
+}
+a[name],
+a[name]:hover,
+a[name]:active{
+}
+a[href] {outline: none;}
+a:visited {color: #333;}
+
+/* テーブル */
+table{
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+/* ================= top ================= */
+/* header */
+#logo{
+	position:relative;
+	margin: 50px auto 20px;
+	width: 850px;
+	text-align: left;
+}
+#imgMain{
+	margin: 0 auto;
+	text-align: center;
+}
+/* 言語 */
+#lang{
+	position:absolute;
+	top:0;
+	right:0;
+	margin-top:-3px;
+}
+#lang a{
+	margin-right:1px;
+	padding:0px 2px;
+	font-size:1em;/*13px*/
+}
+/* Gナビ */
+#gnavi{
+	margin:0 auto 10px;
+	width: 850px;
+	text-align: center;
+}
+#gnavi div{
+	width: 850px;
+	overflow:hidden;
+}
+#gnavi a{
+	display: block;
+	float:left;
+	padding:7px 27px 7px 27px;
+	border-left:solid 1px #ccc;
+}
+#gnavi a:first-child{
+	border:none;
+}
+#gnavi a:hover{
+	background-color:#999;
+	color: #fff;
+	text-decoration:none;
+}
+#gnavi a:nth-child(3),
+#gnavi a:nth-child(5){
+	margin-right:1px;
+	padding:7px 24px 7px 24px;
+	border-right:solid 1px #ccc;
+}
+/*サブnavi*/
+.border{color:#ccc;}
+
+/* 新着情報 */
+#news{
+	margin:15px auto;
+	width: 850px;
+	border-bottom:solid 2px #666;
+	color:#444;
+	font-size:1.75em;
+	font-weight:bold;
+}
+.news a{
+	display:block;
+	margin-bottom:10px;
+	line-height:160%;
+}
+
+/* ================= 下層ページ ================= */
+/* 見出し */
+.title{
+	background-color:#393C41;
+	margin-bottom:15px;
+}
+.title td{
+	padding:7px 15px;
+}
+.title td span{
+	color:#fff;
+	font-size:1.25em;
+	font-weight:normal;
+}
+.ttlMenu{
+	border-bottom:1px solid #333;
+	margin-top:2px;
+	margin-bottom: 20px;
+	padding-bottom:10px;
+	font-weight:bold;
+}
+.subMenu{
+	border-bottom:1px solid #333;
+	margin-top:2px;
+	margin-bottom:7px;
+	padding-bottom:2px;
+}
+.subMenu div{
+	line-height:180%;
+	padding-bottom:7px;
+	color:#ccc;
+}
+/* ================= フッター ================= */
+/* コピーライト */
+.copyright{
+	margin:70px auto 40px;
+	font-size:85%;
+}
+
+
+/* ================= 以前のCSSを引継（直接headに書いてあったもの） ================= */
+
+.style4 {color: #333333}
+.style1 {
+	font-size: 15px;
+	font-weight: bold;
+	display:block;
+	margin-top:8px;
+	margin-bottom:15px;
+}
+.style8 {font-size: 12px; font-weight: bold; color: #333333; }
+.style10 {font-size: 14px; font-weight: bold; color: #CCCCCC; }
+.style13 {color: #333333; font-size: 16px; }
+.style3 {
+	color: #333333;
+}
+.style15 {color: #000000}
+ul {
+	margin-left:0px;
+	padding-left:20px;
+	line-height:1.5em;
+}
+ul li {
+	padding:0 0 0 0;
+	margin:0 0 5px 0;
+	color: #666;
+}
+ul li a:link,
+ul li a:visited{
+	color: #333;
+}
+.style4 a:link,
+.style4 a:visited{
+	color: #33f;
+}
+ul li a:hover,
+.style4 a:hover{
+	color: #f33;
+}
